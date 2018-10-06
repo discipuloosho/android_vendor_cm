@@ -119,13 +119,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     AudioFX \
     CMSettingsProvider \
-    LineageSetupWizard \
     Eleven \
     ExactCalculator \
     Jelly \
     LockClock \
     Trebuchet \
-    Updater \
     WallpaperPicker \
     WeatherProvider
 
@@ -221,6 +219,7 @@ PRODUCT_PACKAGES += \
     procrank
 
 # Conditionally build in su
+WITH_SU := false
 ifeq ($(WITH_SU),true)
 PRODUCT_PACKAGES += \
     su
